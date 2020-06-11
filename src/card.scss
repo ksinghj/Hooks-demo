@@ -1,12 +1,33 @@
 .card {
   display: flex;
   flex-direction: column;
-  margin: 2em 0;
+  margin: 2em auto;
+  max-width: 55vw;
+  border: 2px solid grey;
+  padding: 1.2em;
+  background: white;
+  -webkit-box-shadow: 4px 7px 29px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 7px 29px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 7px 29px 0px rgba(0,0,0,0.75);
 }
 
 .field {
   padding: 0.2em 0;
   font-size: 20px;
   margin: auto;
-  max-width: 75vw;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+label {
+  text-align: left;
+  margin: 1em 0 0.2em 0;
+  color: royalblue;
 }

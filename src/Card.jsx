@@ -2,27 +2,33 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./card.scss";
 
-const Card = ({ propsName, propsSurname }) => {
-  const [name, setName] = useState();
-  const [surname, setSurname] = useState();
+const Card = () => {
+  const [name, setName] = useState("Mary");
+  const [surname, setSurname] = useState("Poppins");
 
   const handleNameChange = e => {
     setName(e.target.value);
   };
 
+  const handleSurnameChange = e => {
+    setSurname(e.target.value);
+  };
+
   return (
     <div className="card">
+      <label>Name</label>
       <input
         type="text"
         className="field"
-        value={propsName}
+        value={name}
         onChange={handleNameChange}
       />
+      <label>Surname</label>
       <input
         type="text"
         className="field"
-        value={propsSurname}
-        onChange={handleNameChange}
+        value={surname}
+        onChange={handleSurnameChange}
       />
     </div>
   );
